@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/contact")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://uy-portfolio.vercel.app/")
 public class MessageFormController {
     private final MessageFormService messageFormService;
 

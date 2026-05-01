@@ -6,11 +6,11 @@ import { MessageForm } from '../components/models/messageForm.model';
   providedIn: 'root',
 })
 export class MessageService {
-  private apiUrl = 'http://localhost:8080/api/contact';
+  private apiUrl = 'https://uyportfoliov2.onrender.com/api/contact';
 
   constructor(private http: HttpClient) {}
 
-  sendMessage(form: MessageForm){
+  sendMessage(form: MessageForm) {
     return this.http.post(this.apiUrl, form, { responseType: 'text' });
   }
 }
