@@ -1,0 +1,58 @@
+<section id="contact">
+  <div class="section-label">// 04 — Contact</div>
+  <h2 class="section-title">Let's Talk</h2>
+  <div class="contact-inner">
+    <div>
+      <div class="contact-text">
+        <p>Open to backend developer roles, full-stack opportunities, and interesting projects. Based in the Philippines — open to remote.</p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:andreeluis.uy@gmail.com" class="contact-link">
+          <span class="contact-link-icon">✉</span>
+          andreeluis.uy@gmail.com
+        </a>
+        <a href="https://github.com/YuAndree" target="_blank" class="contact-link">
+          <span class="contact-link-icon">⌥</span>
+          github: YuAndree
+        </a>
+        <a href="https://www.linkedin.com/in/andree-luis-uy-056191317/" target="_blank" class="contact-link">
+          <span class="contact-link-icon">↗</span>
+          linkedin: Andree Luis Uy
+        </a>
+      </div>
+    </div>
+    <form class="contact-form" (ngSubmit)="sendMessage()">
+      <input
+        class="form-field"
+        type="text"
+        placeholder="Your name"
+        name="name"
+        [(ngModel)]="form.name"
+      />
+
+      <input
+        class="form-field"
+        type="email"
+        placeholder="Your email"
+        name="email"
+       [(ngModel)]="form.email"
+      />
+
+      <textarea
+        class="form-field" rows="5"
+        placeholder="Your message"
+        name="message"
+        [(ngModel)]="form.message">
+      </textarea>
+
+      <button type="submit" class="btn-primary">
+        Send Message
+      </button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 <span>Andree Luis Uy</span> · Built with intention.</p>
+  <p>Backend Developer · Philippines</p>
+</footer>
